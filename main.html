@@ -1,79 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wonderlyst - Home</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>The Wonderlyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <h1>The Wonderlyst</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="main.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-grid">
+      <div class="hero-panel">
+        <img src="images/hero-left.jpg" alt="Hero left" />
+      </div>
+      <div class="hero-panel">
+        <img src="images/hero-center.jpg" alt="Hero center" />
+      </div>
+      <div class="hero-panel">
+        <img src="images/hero-right.jpg" alt="Hero right" />
+      </div>
+    </div>
+
+    <!-- Crest / logo top left -->
+    <div class="hero-logo">
+      <img src="images/logo-small.png" alt="Wonderlyst crest" />
+    </div>
+
+    <!-- Top nav center -->
+    <nav class="hero-nav">
+      <a href="#">Archive</a>
+      <a href="#">About</a>
+      <a href="#">Subscribe</a>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to The Wonderlyst</h1>
-            <p>Discover amazing experiences and create unforgettable memories</p>
-            <!-- <a href="about.html" class="btn">Learn More</a> -->
+    <!-- Top-right icons -->
+    <div class="hero-icons">
+      <span class="icon-square"></span>
+      <span class="icon-square"></span>
+    </div>
+
+    <!-- Big title -->
+    <div class="hero-title">
+      <h1>THE WONDERLYST</h1>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="page">
+
+    <!-- Row 1: A READ / A LOOK / A JOURNEY -->
+    <section class="grid-section top-grid">
+      <div class="grid-item">
+        <p class="section-label">A READ</p>
+        <div class="img-frame">
+          <img src="images/read.jpg" alt="A read" />
         </div>
+      </div>
+
+      <div class="grid-item">
+        <p class="section-label">A LOOK</p>
+        <div class="img-frame">
+          <img src="images/look.jpg" alt="A look" />
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <p class="section-label">A JOURNEY</p>
+        <div class="img-frame">
+          <img src="images/journey.jpg" alt="A journey" />
+        </div>
+      </div>
     </section>
 
-    <!-- Main Content Section -->
-    <section class="main-content">
-        <div class="container">
-            <h2>Explore Our Features</h2>
-            <div class="features">
-                <div class="feature-card">
-                    <h3>Adventure</h3>
-                    <p>Embark on thrilling journeys and explore new horizons.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Discovery</h3>
-                    <p>Uncover hidden gems and unique experiences.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Connection</h3>
-                    <p>Connect with fellow travelers and share your stories.</p>
-                </div>
-            </div>
-        </div>
+    <!-- Intro paragraph -->
+    <section class="intro">
+      <p>
+        The Wonderlyst is a weekly guide to wonder. Everything that’s worth a look, a listen, a read, a taste, a lust, a think, or
+        a journey. This newsletter was born out of my (almost) insatiable curiosity and belief in the transformative power of
+        wonder and awe. At the suggestion of many friends, I began sharing ideas for cultivating wonder, hoping to inspire
+        others to do the same.
+      </p>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>The Wonderlyst</h3>
-                    <p>Creating memorable experiences since 2025</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="main.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Email: info@thewonderlyst.com</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 The Wonderlyst. All rights reserved.</p>
-            </div>
+    <!-- Row 2: A TASTE / A LISTEN / A THINK -->
+    <section class="grid-section mid-grid">
+      <div class="grid-item">
+        <div class="img-frame">
+          <img src="images/taste.jpg" alt="A taste" />
         </div>
-    </footer>
+        <p class="section-label section-label-bottom">A TASTE</p>
+      </div>
+
+      <div class="grid-item">
+        <div class="img-frame">
+          <img src="images/listen.jpg" alt="A listen" />
+        </div>
+        <p class="section-label section-label-bottom">A LISTEN</p>
+      </div>
+
+      <div class="grid-item">
+        <div class="img-frame">
+          <img src="images/think.jpg" alt="A think" />
+        </div>
+        <p class="section-label section-label-bottom">A THINK</p>
+      </div>
+    </section>
+
+    <!-- Row 3: A LUST (center) -->
+    <section class="lust-section">
+      <div class="lust-inner">
+        <div class="img-frame">
+          <img src="images/lust.jpg" alt="A lust" />
+        </div>
+        <p class="section-label section-label-bottom lust-label">A LUST</p>
+      </div>
+    </section>
+
+    <!-- Crest in the center -->
+    <section class="crest-section">
+      <img src="images/crest-large.png" alt="Wonderlyst crest large" />
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a href="#">CONTACT</a>
+    <a href="#">INSTAGRAM</a>
+    <a href="#">SUBSCRIBE</a>
+    <a href="#">LEGAL</a>
+  </footer>
+
 </body>
 </html>
