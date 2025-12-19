@@ -40,6 +40,18 @@ body {
   overflow: hidden;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
 .hero::after {
   content: '';
   position: absolute;
@@ -74,7 +86,7 @@ body {
 }
 
 .hero-logo img {
-  height: 52px;
+  height: 70px;
   width: auto;
 }
 
@@ -86,10 +98,12 @@ body {
   transform: translateX(-50%);
   display: flex;
   gap: 28px;
+  align-items: center;
   font-size: 13px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   z-index: 5;
+  padding-top: 6px;
 }
 
 .hero-nav a {
@@ -104,6 +118,7 @@ body {
   right: 24px;
   display: flex;
   gap: 12px;
+  align-items: center;
   z-index: 5;
 }
 
