@@ -165,7 +165,7 @@ body {
 .page {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 60px 40px 120px;
+  padding: 60px 40px 80px;
 }
 
 .grid-section {
@@ -291,35 +291,56 @@ body {
   height: auto;
 }
 
-.crest-section {
-  margin-top: 72px;
-  display: flex;
-  justify-content: center;
-}
-
-.crest-section img {
-  max-width: 420px;
-  width: 100%;
-  height: auto;
-}
-
 /* FOOTER =================================================== */
 
 .site-footer {
-  max-width: 1080px;
-  margin: 0 auto 40px;
-  padding: 0 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 0;
+  padding: 60px 40px 0;
   font-size: 13px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
+.footer-links-left,
+.footer-links-right {
+  position: absolute;
+  display: flex;
+  gap: 80px;
+  padding-bottom: 40px;
+  z-index: 20;
+}
+
+.footer-links-left {
+  left: 40px;
+  bottom: 40px;
+}
+
+.footer-links-right {
+  right: 40px;
+  bottom: 40px;
+}
+
 .site-footer a {
   text-decoration: none;
   color: var(--rust);
+}
+
+.footer-crest {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: calc((1400px - 80px) / 3);
+}
+
+.footer-crest img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* RESPONSIVE =============================================== */
@@ -339,6 +360,20 @@ body {
 
   .hero-grid {
     min-height: 280px;
+  }
+
+  .site-footer {
+    padding: 40px 20px 0;
+  }
+
+  .footer-links-left {
+    left: 20px;
+    bottom: 30px;
+  }
+
+  .footer-links-right {
+    right: 20px;
+    bottom: 30px;
   }
 
   .site-footer {
@@ -384,7 +419,7 @@ body {
 
 @media (max-width: 600px) {
   .page {
-    padding: 40px 16px 80px;
+    padding: 40px 16px 60px;
   }
 
   /* Stack grid only on mobile */
@@ -422,7 +457,29 @@ body {
   }
 
   .site-footer {
-    padding: 0 16px;
+    padding: 40px 16px 0;
     font-size: 11px;
+    margin-top: 80px;
+  }
+
+  .footer-links-left {
+    position: static;
+    justify-content: center;
+    gap: 16px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer-links-right {
+    position: static;
+    justify-content: center;
+    gap: 16px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer-crest {
+    max-width: 100%;
+    padding: 0 20px;
   }
 }
