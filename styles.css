@@ -103,14 +103,25 @@ body {
   top: 18px;
   right: 24px;
   display: flex;
-  gap: 8px;
+  gap: 12px;
   z-index: 5;
 }
 
-.icon-square {
-  width: 16px;
-  height: 16px;
-  border: 1px solid white;
+.icon-link {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  opacity: 0.7;
+}
+
+.icon-link svg {
+  display: block;
 }
 
 /* main title overlay */
