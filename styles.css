@@ -163,32 +163,88 @@ body {
 /* MAIN LAYOUT ============================================= */
 
 .page {
-  max-width: 1080px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 60px 32px 120px;
+  padding: 60px 40px 120px;
 }
 
 .grid-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 24px;
+  align-items: start;
+}
+
+/* Top grid - A READ, A LOOK, A JOURNEY */
+.top-grid {
+  margin-bottom: 40px;
+  align-items: end;
 }
 
 .top-grid .section-label {
   margin-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--rust);
+}
+
+.top-grid .grid-item:nth-child(1) .img-frame {
+  height: 480px;
+}
+
+.top-grid .grid-item:nth-child(2) .img-frame {
+  height: 700px;
+}
+
+.top-grid .grid-item:nth-child(3) .img-frame {
+  height: 480px;
+}
+
+/* Middle grid - A TASTE, A LISTEN, A THINK */
+.mid-grid {
+  margin-bottom: 40px;
+}
+
+.mid-grid .grid-item:nth-child(1) .img-frame {
+  height: 480px;
+}
+
+.mid-grid .grid-item:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.mid-grid .grid-item:nth-child(2) .img-frame:nth-of-type(1) {
+  height: 330px;
+}
+
+.mid-grid .grid-item:nth-child(2) .section-label:nth-of-type(2) {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.mid-grid .grid-item:nth-child(2) .img-frame:nth-of-type(2) {
+  height: 330px;
+}
+
+.mid-grid .grid-item:nth-child(3) .img-frame {
+  height: 480px;
 }
 
 .section-label-bottom {
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 .img-frame {
   width: 100%;
   overflow: hidden;
+  background: #f5f5f5;
 }
 
 .img-frame img {
   width: 100%;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
@@ -201,15 +257,11 @@ body {
 }
 
 .intro {
-  margin: 52px auto 72px;
-  max-width: 980px;
-  font-size: 13px;
-  line-height: 1.8;
+  margin: 52px 0 72px;
+  max-width: 100%;
+  font-size: 16px;
+  line-height: 1.9;
   color: var(--ink);
-}
-
-.mid-grid {
-  row-gap: 0;
 }
 
 .lust-section {
@@ -225,6 +277,10 @@ body {
 .lust-label {
   text-align: left;
   margin-top: 8px;
+}
+
+.lust-inner .img-frame {
+  height: 480px;
 }
 
 .crest-section {
@@ -260,14 +316,69 @@ body {
 
 /* RESPONSIVE =============================================== */
 
+@media (max-width: 1200px) {
+  .page {
+    padding: 40px 30px 100px;
+  }
+
+  /* Slightly reduce image heights for medium screens */
+  .top-grid .grid-item:nth-child(1) .img-frame {
+    height: 400px;
+  }
+
+  .top-grid .grid-item:nth-child(2) .img-frame {
+    height: 600px;
+  }
+
+  .top-grid .grid-item:nth-child(3) .img-frame {
+    height: 400px;
+  }
+
+  .mid-grid .grid-item:nth-child(1) .img-frame,
+  .mid-grid .grid-item:nth-child(3) .img-frame {
+    height: 400px;
+  }
+
+  .mid-grid .grid-item:nth-child(2) .img-frame:nth-of-type(1),
+  .mid-grid .grid-item:nth-child(2) .img-frame:nth-of-type(2) {
+    height: 280px;
+  }
+}
+
 @media (max-width: 900px) {
   .page {
     padding: 40px 20px 80px;
   }
 
+  /* Keep grid but make it smaller */
   .grid-section {
-    grid-template-columns: 1fr;
-    row-gap: 40px;
+    column-gap: 16px;
+  }
+
+  .top-grid .grid-item:nth-child(1) .img-frame {
+    height: 320px;
+  }
+
+  .top-grid .grid-item:nth-child(2) .img-frame {
+    height: 480px;
+  }
+
+  .top-grid .grid-item:nth-child(3) .img-frame {
+    height: 320px;
+  }
+
+  .mid-grid .grid-item:nth-child(1) .img-frame,
+  .mid-grid .grid-item:nth-child(3) .img-frame {
+    height: 320px;
+  }
+
+  .mid-grid .grid-item:nth-child(2) .img-frame:nth-of-type(1),
+  .mid-grid .grid-item:nth-child(2) .img-frame:nth-of-type(2) {
+    height: 220px;
+  }
+
+  .intro {
+    font-size: 14px;
   }
 
   .hero-grid {
@@ -315,6 +426,32 @@ body {
 }
 
 @media (max-width: 600px) {
+  /* Stack grid only on mobile */
+  .grid-section {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .top-grid .grid-item:nth-child(1) .img-frame,
+  .top-grid .grid-item:nth-child(2) .img-frame,
+  .top-grid .grid-item:nth-child(3) .img-frame {
+    height: 350px;
+  }
+
+  .mid-grid .grid-item:nth-child(1) .img-frame,
+  .mid-grid .grid-item:nth-child(3) .img-frame {
+    height: 350px;
+  }
+
+  .mid-grid .grid-item:nth-child(2) .img-frame:nth-of-type(1),
+  .mid-grid .grid-item:nth-child(2) .img-frame:nth-of-type(2) {
+    height: 280px;
+  }
+
+  .intro {
+    font-size: 14px;
+  }
+
   .hero-logo img {
     height: 40px;
   }
