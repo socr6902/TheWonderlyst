@@ -280,29 +280,56 @@ body {
     justify-content: center;
     text-align: center;
   }
-}
 
-
-/* RESPONSIVE =============================================== */
-
-@media (max-width: 900px) {
-  .page {
-    padding: 40px 20px 80px;
+  /* Navbar responsive adjustments */
+  .hero-logo {
+    top: 12px;
+    left: 12px;
   }
 
-  .grid-section {
-    grid-template-columns: 1fr;
-    row-gap: 40px;
+  .hero-logo img {
+    height: 50px;
+  }
+
+  .hero-nav {
+    top: 12px;
+    gap: 16px;
+    font-size: 11px;
+    padding-top: 4px;
+  }
+
+  .hero-icons {
+    top: 12px;
+    right: 12px;
+    gap: 8px;
+  }
+
+  .icon-link svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .hero::before {
+    height: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-logo img {
+    height: 40px;
+  }
+
+  .hero-nav {
+    gap: 12px;
+    font-size: 10px;
+  }
+
+  .icon-link svg {
+    width: 14px;
+    height: 14px;
   }
 
   .hero-grid {
-    min-height: 320px;
-  }
-
-  .site-footer {
-    flex-wrap: wrap;
-    gap: 12px 24px;
-    justify-content: center;
-    text-align: center;
+    min-height: 280px;
   }
 }
