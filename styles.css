@@ -15,6 +15,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "TAY Makawao";
+  src: url("fonts/TAYMakawao.woff2") format("woff2"),
+       url("fonts/TAYMakawao.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -104,6 +113,7 @@ body {
 }
 
 .hero-title h1 {
+  font-family: "TAY Makawao", serif;
   margin: 0;
   font-size: clamp(40px, 7vw, 76px);
   letter-spacing: 0.12em;
