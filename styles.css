@@ -440,6 +440,125 @@ body {
   display: block;
 }
 
+/* ABOUT PAGE ============================================= */
+
+.about-hero {
+  position: relative;
+  height: 106px;
+  background: var(--cream);
+}
+
+.about-nav a {
+  color: var(--rust) !important;
+}
+
+.about-icons .icon-link {
+  color: var(--rust) !important;
+}
+
+.about-page {
+  min-height: auto;
+  padding: 40px 60px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.about-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-crest {
+  width: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-dot {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--rust);
+}
+
+.about-crest img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-paragraphs {
+  max-width: 550px;
+}
+
+.about-paragraphs p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--ink);
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.about-signature {
+  text-align: right;
+  color: var(--rust);
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-footer {
+  background: transparent;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  gap: 40px;
+  border-top: 1px solid rgba(205, 66, 45, 0.2);
+  background: var(--cream);
+  z-index: 50;
+}
+
+.footer-link {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--rust);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.footer-link:hover {
+  opacity: 0.7;
+}
+
 /* RESPONSIVE =============================================== */
 
 @media (max-width: 900px) {
@@ -512,6 +631,29 @@ body {
   .hero::before {
     height: 120px;
   }
+
+  /* About page responsive */
+  .about-page {
+    padding: 50px 40px 40px;
+  }
+
+  .about-container {
+    gap: 50px;
+  }
+
+  .about-crest {
+    width: 80px;
+    margin-bottom: 35px;
+  }
+
+  .about-footer {
+    padding: 25px 40px;
+    gap: 30px;
+  }
+
+  .footer-link {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -582,6 +724,46 @@ body {
     width: 100%;
     max-width: none;
     padding: 0 16px;
+  }
+
+  /* About page mobile */
+  .about-page {
+    padding: 40px 20px 30px;
+    min-height: auto;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-crest {
+    width: 70px;
+    margin-bottom: 25px;
+  }
+
+  .about-paragraphs {
+    max-width: 100%;
+  }
+
+  .about-paragraphs p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .about-footer {
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-link {
+    font-size: 9px;
   }
 }
 
