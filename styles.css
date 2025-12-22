@@ -209,7 +209,7 @@ body {
 .page {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 60px 40px 80px;
+  padding: 60px 40px 20px;
 }
 
 .grid-section {
@@ -388,7 +388,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   margin-top: 0;
-  padding: 60px 40px 0;
+  padding: 0px 40px 0;
   font-size: 13px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
