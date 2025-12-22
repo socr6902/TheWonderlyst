@@ -148,16 +148,18 @@ body {
   justify-content: center;
   pointer-events: none;
   z-index: 10;
+  padding: 0 clamp(20px, 5vw, 80px);
 }
 
 .hero-title h1 {
   font-family: "TAY Makawao", serif;
   margin: 0;
-  font-size: clamp(64px, 12vw, 120px);
+  font-size: clamp(48px, 10vw, 150px);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--blush);
   text-align: center;
+  line-height: 1.1;
 }
 
 /* MAIN LAYOUT ============================================= */
@@ -254,6 +256,12 @@ body {
   height: 100%;
   display: block;
   object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease;
+}
+
+.img-frame:hover img {
+  filter: grayscale(0%);
 }
 
 .section-label {
