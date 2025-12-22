@@ -151,5 +151,30 @@
     </div>
   </footer>
 
+  <script>
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      threshold: 0.15,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all grid items
+    document.querySelectorAll('.grid-item').forEach(item => {
+      observer.observe(item);
+    });
+
+    // Observe intro text
+    const intro = document.querySelector('.intro');
+    if (intro) observer.observe(intro);
+  </script>
+
 </body>
 </html>
