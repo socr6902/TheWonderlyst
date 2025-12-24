@@ -351,6 +351,7 @@ body {
   font-size: 16px;
   line-height: 1.9;
   color: var(--ink);
+  text-align: justify;
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease, transform 0.8s ease;
@@ -423,6 +424,10 @@ body {
 .site-footer a:hover {
   transform: scale(1.1);
   opacity: 0.7;
+}
+
+.mobile-footer-crest {
+  display: none;
 }
 
 .footer-crest {
@@ -690,30 +695,31 @@ body {
   }
 
   .page {
-    padding: 40px 16px 60px;
+    padding: 40px 8px 20px;
   }
 
-  /* Stack grid only on mobile */
+  /* Keep 3-column grid on mobile */
   .grid-section {
-    grid-template-columns: 1fr;
-    row-gap: 30px;
-    column-gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 8px;
   }
 
   .top-grid,
   .mid-grid {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+
+  .section-label,
+  .top-grid .section-label {
+    font-size: 10px;
+    margin-bottom: 6px;
   }
 
   .intro {
     font-size: 13px;
     line-height: 1.7;
     padding: 0 10px;
-  }
-
-  .section-label {
-    font-size: 10px;
-    margin-bottom: 12px;
   }
 
   .hero-logo img {
@@ -739,7 +745,7 @@ body {
   }
 
   .site-footer {
-    padding: 20px 16px 0;
+    padding: 8px 16px 0;
     font-size: 10px;
     margin-top: 0;
     display: flex;
@@ -747,30 +753,39 @@ body {
     align-items: center;
   }
 
+  .mobile-footer-crest {
+    display: block;
+    width: calc(33.33% - 5.33px);
+    margin-bottom: 12px;
+  }
+
+  .mobile-footer-crest img {
+    width: 100%;
+    height: auto;
+  }
+
   .footer-links-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 0;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0;
     margin-bottom: 16px;
   }
 
   .footer-links-left,
   .footer-links-right {
     position: static;
-    display: flex;
-    gap: 20px;
+    display: contents;
   }
 
   .footer-crest {
-    width: 100%;
-    max-width: none;
-    padding: 0 16px;
+    display: none;
   }
 
   .footer-crest img {
-    max-width: 200px;
+    max-width: 120px;
     margin: 0 auto;
   }
 
