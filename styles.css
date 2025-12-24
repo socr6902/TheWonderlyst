@@ -578,6 +578,10 @@ body {
 /* RESPONSIVE =============================================== */
 
 @media (max-width: 900px) {
+  .hero-title h1 {
+    font-size: clamp(36px, 8vw, 80px);
+  }
+
   .page {
     padding: 40px 20px 80px;
   }
@@ -588,6 +592,9 @@ body {
 
   .intro {
     font-size: 14px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-grid {
@@ -649,6 +656,10 @@ body {
   }
 
   /* About page responsive */
+  .about-hero {
+    height: 90px;
+  }
+
   .about-page {
     padding: 50px 40px 40px;
   }
@@ -658,7 +669,7 @@ body {
   }
 
   .about-crest {
-    width: 80px;
+    width: 120px;
     margin-bottom: 35px;
   }
 
@@ -673,6 +684,11 @@ body {
 }
 
 @media (max-width: 600px) {
+  .hero-title h1 {
+    font-size: clamp(28px, 9vw, 60px);
+    letter-spacing: 0.1em;
+  }
+
   .page {
     padding: 40px 16px 60px;
   }
@@ -690,7 +706,14 @@ body {
   }
 
   .intro {
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 1.7;
+    padding: 0 10px;
+  }
+
+  .section-label {
+    font-size: 10px;
+    margin-bottom: 12px;
   }
 
   .hero-logo img {
@@ -709,6 +732,10 @@ body {
 
   .hero-grid {
     min-height: 250px;
+  }
+
+  .hero::before {
+    height: 100px;
   }
 
   .site-footer {
@@ -742,9 +769,18 @@ body {
     padding: 0 16px;
   }
 
+  .footer-crest img {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
   /* About page mobile */
+  .about-hero {
+    height: 80px;
+  }
+
   .about-page {
-    padding: 40px 20px 30px;
+    padding: 30px 20px 80px;
     min-height: auto;
   }
 
@@ -754,7 +790,7 @@ body {
   }
 
   .about-crest {
-    width: 70px;
+    width: 90px;
     margin-bottom: 25px;
   }
 
@@ -765,21 +801,52 @@ body {
   .about-paragraphs p {
     font-size: 13px;
     line-height: 1.7;
+    text-align: left;
+  }
+
+  .about-paragraphs .about-signature {
+    font-size: 13px;
   }
 
   .about-image {
     max-width: 100%;
+    height: 500px;
   }
 
   .about-footer {
-    padding: 20px;
-    gap: 20px;
+    padding: 15px 20px;
+    gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .footer-link {
     font-size: 9px;
+    letter-spacing: 0.15em;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+  .hero-title h1 {
+    font-size: clamp(24px, 9vw, 48px);
+  }
+
+  .hero-nav {
+    gap: 10px;
+    font-size: 9px;
+  }
+
+  .about-crest {
+    width: 80px;
+  }
+
+  .about-paragraphs p {
+    font-size: 12px;
+  }
+
+  .about-image {
+    height: 400px;
   }
 }
 
