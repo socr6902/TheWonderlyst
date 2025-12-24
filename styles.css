@@ -829,15 +829,27 @@ body {
   }
 
   .about-footer {
-    padding: 15px 20px;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
+    position: static;
+    padding: 8px 16px 0;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .footer-link {
-    font-size: 9px;
-    letter-spacing: 0.15em;
+  .about-footer .footer-links-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  .about-footer .footer-links-left,
+  .about-footer .footer-links-right {
+    position: static;
+    display: contents;
   }
 }
 
