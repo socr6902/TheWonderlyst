@@ -551,14 +551,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   gap: 40px;
-  /* border-top: 1px solid rgba(205, 66, 45, 0.2); */
   background: var(--cream);
-  z-index: 50;
 }
 
 .footer-link {
