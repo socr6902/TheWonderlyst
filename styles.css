@@ -57,13 +57,21 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "TAY Wingman";
+  src: url("fonts/TAYWingman.woff2") format("woff2"),
+       url("fonts/TAYWingman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 body {
   margin: 0;
   padding: 0;
   background-color: var(--cream);
   color: var(--ink);
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "TAY Wingman", "Helvetica Neue", Arial, sans-serif;
 }
 
 /* HERO ======================================================= */
@@ -589,9 +597,6 @@ body {
 
   .intro {
     font-size: 14px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .hero-grid {
