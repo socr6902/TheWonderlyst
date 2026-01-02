@@ -479,7 +479,7 @@ body {
 
 .about-container {
   display: flex;
-  gap: 80px;
+  gap: 120px;
   align-items: flex-start;
   max-width: 1400px;
   width: 100%;
@@ -490,14 +490,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .about-crest {
-  width: 150px;
-  margin-bottom: 50px;
+  width: 100px;
+  margin-bottom: 45px;
+  margin-top: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .red-dot {
@@ -514,7 +516,10 @@ body {
 }
 
 .about-paragraphs {
-  max-width: 550px;
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .about-paragraphs p {
