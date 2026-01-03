@@ -479,8 +479,8 @@ body {
 
 .about-container {
   display: flex;
-  gap: 120px;
-  align-items: flex-start;
+  gap: 60px;
+  align-items: center;
   max-width: 1400px;
   width: 100%;
 }
@@ -490,12 +490,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .about-crest {
   width: 100px;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
   margin-top: 0;
   display: flex;
   justify-content: center;
@@ -532,9 +532,15 @@ body {
 
 .about-paragraphs .about-signature {
   text-align: right;
-  color: var(--rust);
   margin-top: 30px;
-  font-size: 15px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15%;
+}
+
+.about-signature img {
+  max-width: 150px;
+  height: auto;
 }
 
 .about-image {
@@ -672,7 +678,7 @@ body {
   }
 
   .about-container {
-    gap: 50px;
+    gap: 40px;
   }
 
   .about-crest {
@@ -690,7 +696,22 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
+  .about-container {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .about-text {
+    max-width: 600px;
+  }
+
+  .about-image {
+    max-width: 500px;
+    width: 100%;
+  }
+
   .hero-title h1 {
     font-size: clamp(28px, 9vw, 60px);
     letter-spacing: 0.1em;
@@ -823,11 +844,13 @@ body {
 
   .about-paragraphs .about-signature {
     font-size: 13px;
+    margin-bottom: 40px;
   }
 
   .about-image {
-    max-width: 100%;
-    height: 500px;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
   }
 
   .about-footer {
