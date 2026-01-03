@@ -537,6 +537,15 @@ body {
   text-align: justify;
 }
 
+.about-paragraphs a {
+  color: var(--rust);
+  text-decoration: none;
+}
+
+.about-paragraphs a:hover {
+  text-decoration: underline;
+}
+
 .about-paragraphs .about-signature {
   text-align: right;
   margin-top: 30px;
