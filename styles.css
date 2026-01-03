@@ -498,7 +498,7 @@ body {
 
 .about-crest {
   width: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   margin-top: 0;
   display: flex;
   justify-content: center;
@@ -836,7 +836,7 @@ body {
 
   .about-crest {
     width: 90px;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
   }
 
   .about-paragraphs {
