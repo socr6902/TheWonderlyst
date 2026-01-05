@@ -247,7 +247,8 @@ body {
 
 .top-grid .section-label {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-family: "TAY Makawao", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--rust);
@@ -351,7 +352,8 @@ body {
 }
 
 .section-label {
-  font-size: 14px;
+  font-family: "TAY Makawao", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--rust);
