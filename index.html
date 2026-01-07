@@ -10,6 +10,9 @@
   <link rel="apple-touch-icon" href="/images/red-crest-logo.png" />
   <meta property="og:image" content="https://socr6902.github.io/TheWonderlyst/images/red-crest-logo.png" />
   <meta name="twitter:image" content="https://socr6902.github.io/TheWonderlyst/images/red-crest-logo.png" />
+    <!-- Preload local fonts to improve rendering (won't change appearance) -->
+    <link rel="preload" href="/fonts/TAYMakawao.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/TAYWingman.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="canonical" href="https://www.thewonderlyst.com/" />
 
 </head>
@@ -19,13 +22,13 @@
   <header class="hero">
     <div class="hero-grid">
       <div class="hero-panel">
-        <img src="images/hero1.jpeg" alt="Hero left" />
+        <img src="images/hero1.jpeg" alt="Hero left" fetchpriority="high" loading="eager" />
       </div>
       <div class="hero-panel">
-        <img src="images/hero2.jpeg" alt="Hero center" />
+        <img src="images/hero2.jpeg" alt="Hero center" fetchpriority="high" loading="eager" />
       </div>
       <div class="hero-panel">
-        <img src="images/hero3.jpeg" alt="Hero right" />
+        <img src="images/hero3.jpeg" alt="Hero right" fetchpriority="high" loading="eager" />
       </div>
     </div>
 
@@ -71,21 +74,21 @@
       <div class="grid-item">
         <p class="section-label">A READ</p>
         <a href="https://thewonderlyst.substack.com/p/lyst-98" target="_blank" class="img-frame">
-          <img src="images/read.jpg" alt="A read" />
+          <img src="images/read.jpg" alt="A read" loading="lazy" />
         </a>
       </div>
 
       <div class="grid-item">
         <p class="section-label">A LOOK</p>
         <a href="https://thewonderlyst.substack.com/p/lyst-97" target="_blank" class="img-frame">
-          <img src="images/look.jpeg" alt="A look" />
+          <img src="images/look.jpeg" alt="A look" loading="lazy" />
         </a>
       </div>
 
       <div class="grid-item">
         <p class="section-label">A JOURNEY</p>
         <a href="https://thewonderlyst.substack.com/p/lyst-83" target="_blank" class="img-frame">
-          <img src="images/journey.jpeg" alt="A journey" />
+          <img src="images/journey.jpeg" alt="A journey" loading="lazy" />
         </a>
       </div>
     </section>
@@ -101,25 +104,25 @@
     <section class="grid-section mid-grid">
       <div class="grid-item">
         <a href="https://thewonderlyst.substack.com/p/lyst-94" target="_blank" class="img-frame">
-          <img src="images/taste.jpeg" alt="A taste" />
+          <img src="images/taste.jpeg" alt="A taste" loading="lazy" />
         </a>
         <p class="section-label section-label-bottom">A TASTE</p>
       </div>
 
       <div class="grid-item">
         <a href="https://thewonderlyst.substack.com/p/lyst-96" target="_blank" class="img-frame">
-          <img src="images/listen.jpeg" alt="A listen" />
+          <img src="images/listen.jpeg" alt="A listen" loading="lazy" />
         </a>
         <p class="section-label section-label-bottom">A LISTEN</p>
         <a href="https://thewonderlyst.substack.com/p/lyst-102" target="_blank" class="img-frame">
-          <img src="images/lust.jpeg" alt="A listen detail" />
+          <img src="images/lust.jpeg" alt="A listen detail" loading="lazy" />
         </a>
         <p class="section-label section-label-bottom">A LUST</p>
       </div>
 
       <div class="grid-item">
         <a href="https://thewonderlyst.substack.com/p/lyst-84" target="_blank" class="img-frame">
-          <img src="images/think.jpeg" alt="A think" />
+          <img src="images/think.jpeg" alt="A think" loading="lazy" />
         </a>
         <p class="section-label section-label-bottom">A THINK</p>
       </div>
