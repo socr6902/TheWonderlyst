@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.thewonderlyst.com/sitemap.xml
+
+# If you'd like to block specific paths, add Disallow lines below
+# Disallow: /private/
