@@ -7,6 +7,11 @@
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="preconnect" href="https://socr6902.github.io" crossorigin>
+  <!-- Preload critical hero images to improve LCP (non-visual) -->
+  <link rel="preload" as="image" href="/images/hero1.jpeg">
+  <link rel="preload" as="image" href="/images/hero2.jpeg">
+  <link rel="preload" as="image" href="/images/hero3.jpeg">
   <!-- Favicon and social image -->
   <link rel="icon" href="/images/red-crest-logo.png" sizes="32x32" type="image/png" />
   <link rel="apple-touch-icon" href="/images/red-crest-logo.png" />
@@ -49,13 +54,13 @@
   <header class="hero">
     <div class="hero-grid">
       <div class="hero-panel">
-        <img src="images/hero1.jpeg" alt="Hero left" fetchpriority="high" loading="eager" />
+  <img src="images/hero1.jpeg" alt="Hero left" fetchpriority="high" loading="eager" decoding="async" width="736" height="920" />
       </div>
       <div class="hero-panel">
-        <img src="images/hero2.jpeg" alt="Hero center" fetchpriority="high" loading="eager" />
+  <img src="images/hero2.jpeg" alt="Hero center" fetchpriority="high" loading="eager" decoding="async" width="736" height="912" />
       </div>
       <div class="hero-panel">
-        <img src="images/hero3.jpeg" alt="Hero right" fetchpriority="high" loading="eager" />
+  <img src="images/hero3.jpeg" alt="Hero right" fetchpriority="high" loading="eager" decoding="async" width="736" height="981" />
       </div>
     </div>
 
